@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Dialog</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    Assignment 11
+    <div class="container">
+        <div class="imgdiv"><img src="images/tmkoc-environment-day.jpg" class="main-img"/></div>
+        <div class="sub-container">
+            <h1 class="headding">🌍 World Environment Day – Our Earth, Our Responsibility</h1>
+            <p class="discription">
+                The Environment Promotion Committee is a passionate group working to protect and preserve our planet
+                through awareness drives, clean-up campaigns, and tree plantation activities. By joining us, you become
+                part of a movement that turns small actions into big changes, creating a cleaner, greener, and healthier
+                future for all.
+            </p>
+            <p class="join-line">Join the Environment Promotion Committee – Together for a Greener Tomorrow!</p>
+            <button type="button" class="btn" onclick="openModal()">Join Us   </button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <img src="images/close-icon.png" class="close-img" alt="Coding"  onclick="closeModal()"/>
+            <form class="form">
+                <h1>Join Now</h1>
+                <input type="text" class="form-input" placeholder="Enter your name"/>
+                <input type="email" class="form-input" placeholder="Enter your email"/>
+                <input type="text" class="form-input" placeholder="Enter your name"/>
+                <input type="text" class="form-input" placeholder="Enter your College Name"/>
+            </form>
+
+            <button type="button" class="btn">Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
